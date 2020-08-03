@@ -7,7 +7,7 @@ import {
 
 import { AnimatedSwitch as Switch } from "react-router-transition";
 import LayoutIndex from "./../page/layout-index";
-
+import LayoutMock from "./../page/layout-mock";
 export default function RouterRelation() {
   // console.log("router");
   return (
@@ -19,6 +19,7 @@ export default function RouterRelation() {
         className="switch-wrapper"
       >
         <Route exact path="/" component={LayoutIndex} />
+        <Route exact path="/mock" component={LayoutMock} />
       </Switch>
     </Router>
   );

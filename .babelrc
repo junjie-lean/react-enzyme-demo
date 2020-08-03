@@ -1,0 +1,68 @@
+{
+  "presets": [
+    //此配置如果修改，可能需要同步修改happyPack插件的配置,以优化打包构建效率
+    ["@babel/react"],
+    [
+      "@babel/env",
+      {
+        // spec: false, //是否启用更为规范的转换
+        // debug: false,
+        "useBuiltIns": "entry", //入口文件出注入polyfill
+        // useBuiltIns: "usage", //按需加入polyfill
+        "targets": {
+          "chrome": "58",
+          "ie": "11"
+        },
+        "corejs": "3"
+      }
+    ]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    ["@babel/plugin-syntax-class-properties", { "loose": true }],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "es",
+        // style: "css"
+        "style": true
+      },
+      "antd"
+    ],
+    [
+      "import",
+      {
+        "libraryName": "lodash",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "lodash"
+    ],
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": "3"
+      }
+    ],
+    [
+      "@babel/plugin-transform-modules-commonjs",
+      {
+        "allowTopLevelThis": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ]
+  ]
+}

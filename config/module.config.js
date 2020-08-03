@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2019-12-19 13:22:01
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-07-29 15:54:24
+ * @Last Modified time: 2020-08-03 14:05:38
  */
 
 /**
@@ -96,9 +96,6 @@ module.exports.setDefaultModule = function (config = {}, loaderArr = []) {
               legacy: true,
             },
           ],
-          // (() => {
-          //   return mode === "production" ? null : ["transform-react-jsx"];
-          // })(),
         ],
       },
     },
@@ -210,7 +207,7 @@ module.exports.setDefaultModule = function (config = {}, loaderArr = []) {
     lessLoader,
     rawLoader,
     urlLoader,
-    fontLoader,
+    fontLoader
     // markdownLoader,
     // happypackLoader
   );
