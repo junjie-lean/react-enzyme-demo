@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-01-09 14:17:37
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-07-20 10:11:30
+ * @Last Modified time: 2020-08-04 09:28:41
  */
 
 import "core-js";
@@ -11,7 +11,7 @@ import { render } from "react-dom";
 import App from "./view/public/public-provider";
 import svgs from "!!raw-loader!./media/svg/symbol-defs.svg";
 const DOM = document.getElementById("app");
-document.title = "jf-web-app-hook";
+document.title = "react单元测试demo";
 document.querySelector("#svg").innerHTML += svgs;
 
 if (!window.__POWERED_BY_QIANKUN__) {
