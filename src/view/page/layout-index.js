@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-07-31 17:19:26
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-03 16:47:11
+ * @Last Modified time: 2020-08-05 14:54:40
  */
 
 import React, { useEffect, useState } from "react";
@@ -26,17 +26,19 @@ export default function (props) {
           setInputValue(value.toString().trim());
         }}
         style={{ height: 30, margin: 30 }}
+        className="inputBox"
       />
       <button
         style={{ height: 30, margin: 30, padding: "0 10px" }}
         onClick={add}
+        className="add"
       >
         添加
       </button>
       <hr />
 
       {state.length == 0 ? (
-        <p>还未添加数据</p>
+        <div className="nodata">还未添加数据</div>
       ) : (
         <div className="data-container">
           {state.map((item, index) => {
@@ -47,3 +49,5 @@ export default function (props) {
     </div>
   );
 }
+
+
