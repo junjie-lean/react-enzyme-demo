@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-06 09:27:08
+ * @Last Modified time: 2020-08-06 17:27:32
  */
 
 import React from "react";
@@ -10,7 +10,7 @@ import "./../enzyme.config";
 import { shallow, mount } from "enzyme";
 import LayoutIndex from "./../../view/page/layout-index";
 import { expect } from "chai";
-
+import Provider from "./../../view/public/public-provider";
 
 describe("描述:Layout-index.js组件的单元测试:", () => {
   const state = [];
@@ -45,9 +45,13 @@ describe("描述:Layout-index.js组件的单元测试:", () => {
     warp.find(".add").simulate("click");
     expect(warp.find(".data-container").exists()).to.equal(true);
     expect(warp.find(".data-container").childAt(0).text()).to.equal(
-      这是测试数据
+      "这是测试数据"
     );
   });
-
-
 });
+
+// describe("描述:provide组件的单元测试", () => {
+//   const warp = shallow(<Provider />);
+
+//   expect(1).to.be(1);
+// });
