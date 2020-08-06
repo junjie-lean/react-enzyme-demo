@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-05 13:55:01
+ * @Last Modified time: 2020-08-06 09:27:08
  */
 
 import React from "react";
@@ -10,7 +10,7 @@ import "./../enzyme.config";
 import { shallow, mount } from "enzyme";
 import LayoutIndex from "./../../view/page/layout-index";
 import { expect } from "chai";
-import { before } from "lodash";
+
 
 describe("描述:Layout-index.js组件的单元测试:", () => {
   const state = [];
@@ -39,8 +39,6 @@ describe("描述:Layout-index.js组件的单元测试:", () => {
   });
 
   it("输入框相关测试", () => {
-
-
     warp
       .find(".inputBox")
       .simulate("change", { target: { value: "这是测试数据" } });
@@ -50,4 +48,6 @@ describe("描述:Layout-index.js组件的单元测试:", () => {
       这是测试数据
     );
   });
+
+
 });
