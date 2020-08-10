@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-10 17:34:40
+ * @Last Modified time: 2020-08-10 17:35:51
  */
 
 import React from "react";
@@ -62,7 +62,7 @@ describe("描述:jest及enzyme和断言库chai的基础api使用", () => {
     expect(cca).to.have.own.property("foo");
   });
 
-  it("断言库chai的api使用之: .any()与.all(), .oneOf()", () => {
+  it("断言库chai的api使用之: .any(), .all(), .oneOf()", () => {
     //any 和 all  放在keys之前,对key匹配;
     //实际运用中可能all这个方法用的比较多;
     //oneOf  属于参数中的某一个
@@ -75,7 +75,7 @@ describe("描述:jest及enzyme和断言库chai的基础api使用", () => {
     //字面意思  不解释
   });
 
-  it("断言库chai的api使用之:.exist, .empty", () => {
+  it("断言库chai的api使用之: .exist, .empty", () => {
     //多用于判断dom节点是否存在或者为空
     //注意:  这两个都是不是方法  仅仅只是两个属性
     expect(a).to.exist;
