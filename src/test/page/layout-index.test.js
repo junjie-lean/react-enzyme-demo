@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-06 17:27:32
+ * @Last Modified time: 2020-08-10 10:32:19
  */
 
 import React from "react";
@@ -50,8 +50,8 @@ describe("描述:Layout-index.js组件的单元测试:", () => {
   });
 });
 
-// describe("描述:provide组件的单元测试", () => {
-//   const warp = shallow(<Provider />);
-
-//   expect(1).to.be(1);
-// });
+describe("描述:jest及enzyme的基础api使用", () => {
+  const a = { number: 1 };
+  const b = { number: 1 };
+  expect(a).is.not.equal(b);
+});

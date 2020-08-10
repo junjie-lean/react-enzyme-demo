@@ -5,11 +5,12 @@
     [
       "@babel/env",
       {
-        // spec: false, //是否启用更为规范的转换
+        "spec": false, //是否启用更为规范的转换
         // debug: false,
         "useBuiltIns": "entry", //入口文件出注入polyfill
         // useBuiltIns: "usage", //按需加入polyfill
         "targets": {
+          "node": "current",
           "chrome": "58",
           "ie": "11"
         },
@@ -21,25 +22,25 @@
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
     ["@babel/plugin-syntax-class-properties", { "loose": true }],
-    [
-      "import",
-      {
-        "libraryName": "antd",
-        "libraryDirectory": "es",
-        // style: "css"
-        "style": true
-      },
-      "antd"
-    ],
-    [
-      "import",
-      {
-        "libraryName": "lodash",
-        "libraryDirectory": "",
-        "camel2DashComponentName": false
-      },
-      "lodash"
-    ],
+    // [
+    //   "import",
+    //   {
+    //     "libraryName": "antd",
+    //     "libraryDirectory": "es",
+    //     // style: "css"
+    //     "style": true
+    //   },
+    //   "antd"
+    // ],
+    // [
+    //   "import",
+    //   {
+    //     "libraryName": "lodash",
+    //     "libraryDirectory": "",
+    //     "camel2DashComponentName": false
+    //   },
+    //   "lodash"
+    // ],
     [
       "module-resolver",
       {
