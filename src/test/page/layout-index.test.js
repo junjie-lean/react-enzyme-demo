@@ -2,7 +2,7 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-10 17:35:51
+ * @Last Modified time: 2020-08-11 13:18:53
  */
 
 import React from "react";
@@ -102,8 +102,6 @@ describe("描述:jest及enzyme和断言库chai的基础api使用", () => {
       return num > 2;
     });
   });
-
-  
 });
 
 //组件的测试:
