@@ -2,8 +2,9 @@
  * @Author: junjie.lean
  * @Date: 2020-08-03 13:22:49
  * @Last Modified by: junjie.lean
- * @Last Modified time: 2020-08-11 13:18:53
+ * @Last Modified time: 2020-08-13 14:23:04
  */
+
 
 import React from "react";
 import "./../enzyme.config";
@@ -13,7 +14,7 @@ import { expect } from "chai";
 // import Provider from "./../../view/public/public-provider";
 
 //基础api的使用
-describe("描述:jest及enzyme和断言库chai的基础api使用", () => {
+describe("描述:断言库chai的基础api使用", () => {
   const a = { number: 1 };
   const b = { number: 1 };
 
